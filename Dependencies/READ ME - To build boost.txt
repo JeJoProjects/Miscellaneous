@@ -1,0 +1,30 @@
+Author   : JeJo
+Date     : 28.12.2018
+Platform : Windows
+
+A) Build against GCC Compiler
+
+1. open cmd promt
+2. gcc --version
+3. if not found set the PATH of GCC bin to envirement variables
+4. in cmd promt command: run 'bootstrap.bat'
+5. command: 'b2.exe toolset=gcc link=shared or static' as per
+    a.  'link=shared': provides '.dll.a' and '.a' files, whereas
+    b.  'link=static': provides '.a' files only.
+6. use CMake or project properties to set additional library paths in 
+   both C++ general compiler settings and general linker settings.
+7. done
+
+A) Build against MSVS Compiler
+
+1. open Developer cmd promt
+2. in cmd promt command: run 'bootstrap.bat'
+3. command: '.\b link=shared or static' as per
+    a.  'link=shared': provides '.dll' and '.lib' files, whereas
+    b.  'link=static': provides '.lib' files only.
+4. use CMake or project properties to set additional library paths in 
+   both C++ general compiler settings and general linker settings.
+7. done
+
+
+
