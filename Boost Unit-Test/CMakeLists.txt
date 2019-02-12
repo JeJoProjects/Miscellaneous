@@ -21,7 +21,8 @@ file(GLOB LIBS
 
 # set the variables for both INCLUDE and LIB Files
 set(BOOST_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Dependencies)
-set(BOOST_LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/MSVS2017_Static)
+#set(BOOST_LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/Libs_MSVS2017_Static)
+set(BOOST_LIBS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Dependencies/Libs_GCC_Shared)
 
 # tell where the HEADERs are  and the linker where the BINARIES(LIBs) are
 include_directories(${BOOST_INCLUDE_DIR})
